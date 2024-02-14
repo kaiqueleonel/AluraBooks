@@ -104,6 +104,55 @@
 
 		</div>
 	</section>
+	<section class="carrossel">
+		<h2 class="carrossel__titulo">mais vendidos</h2>
+		<!-- Slider main container -->
+		<div class="swiper">
+			<!-- If we need pagination -->
+			<div class="swiper-pagination"></div>
+			<!-- Additional required wrapper -->
+			<div class="swiper-wrapper">
+			<!-- Slides -->
+			<div class="swiper-slide"><img src="/img/Acessibilidade.svg" alt="Livro sobre Acessibilidade"></div>
+			<div class="swiper-slide"><img src="/img/Arquitetura.svg" alt="Livro sobre Arquitetura"></div>
+			<div class="swiper-slide"><img src="/img/Guia Front-end.svg" alt="Guia Front-End para iniciantes"></div>
+			<div class="swiper-slide"><img src="/img/Javascript.svg" alt="Livro sobre Javascript"></div>
+			<div class="swiper-slide"><img src="/img/Nodejs.svg" alt="Livro sobre Nodejs"></div>
+			</div>
+			
+		
+			<!-- If we need navigation buttons -->
+			<div class="swiper-button-prev"></div>
+			<div class="swiper-button-next"></div>
+		
+			<!-- If we need scrollbar -->
+			<div class="swiper-scrollbar"></div>
+		</div>
+
+		<div class="card">
+			<!--  1° Linha  -->
+			<div class="card__descricao">
+				<!-- 1° Coluna -->
+				<div class="descricao">
+					<img class="descricao__avaliacao" src="img/Estrelinhas.svg" alt="Estrelinhas de avaliação">
+					<h3 class="descricao__titulo">Autora do Mês</h3>
+					<h2 class="descricao__titulo-nome">Juliana Agarikov</h2>
+					<p class="descricao__texto">Analista de sistemas e escritora, Juliana é especialista em Front-End. </p>
+				</div>
+				<img src="img/Perfil-escritora.png" alt="Foto da escritora Juliana Agarikov">
+			</div>
+			<!-- 2° Linha -->
+			<div class="card__botoes">
+				<ul class="botoes">
+					<li class="botoes__itens"><img src="img/Favoritos.svg" alt="Icone de favoritar livro"></li>
+					<li class="botoes__itens"><img src="img/Compras.svg" alt="Icone da sacola de compras"></li>
+				</ul>
+				<!-- 2° coluna -->
+				<a href="#" class="botoes__ancora">Saiba mais</a>
+			</div>
+
+		</div>
+	</section>
 
 	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 	<script>
@@ -114,6 +163,7 @@
 			pagination: {
     			el: '.swiper-pagination',
   			},
+  			  loop: true,
 		});
 
 	</script>

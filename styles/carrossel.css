@@ -48,7 +48,8 @@
 
 }
 
-.descricao__titulo-livro{
+.descricao__titulo-livro,
+.descricao__titulo-nome{
     font-size: 18px;
     font-weight: 700;
     margin: .5em 0;
@@ -68,4 +69,8 @@
     color: var(--branco);
     text-decoration: none;
     font-weight: 700;
+}
+
+.descricao__avaliacao{
+    padding-bottom: .3em;
 }
