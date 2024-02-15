@@ -3,6 +3,8 @@
 @import url(/styles/carrossel.css);
 @import url(/styles/card.css);
 @import url(/styles/topicos.css);
+@import url(/styles/contato.css);
+@import url(/styles/footer.css);
 
 :root{
     --cor-de-fundo: #EBECEE;
@@ -10,6 +12,7 @@
     --laranja: #EB9800;
     --azul-degrade: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
     --fonte-principal: "Poppins", sans-serif;
+    --azul:#002F52;
 }
 
 body{
@@ -17,4 +20,8 @@ body{
     font-size: 16px;
     font-family: var(--fonte-principal);
     font-weight: 400;
+}
+
+hr{
+    margin: 0;
 }
