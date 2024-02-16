@@ -23,7 +23,8 @@
     border: 2px var(--branco) solid;
     border-radius: 24px;
     background-color: transparent;
-    padding: 1em;
+    padding: 1.5em;
+    color: var(--branco);
 }
 
 .banner__pesquisa::placeholder{
@@ -38,3 +39,17 @@
 }
 
 
+@media screen and (min-width: 1024px){
+    .banner__titulo{
+        font-size: 36px;
+    }
+
+    .banner__pesquisa{
+        width: 55%;
+        margin: auto;
+    }
+
+    .banner__pesquisa::placeholder{
+        background-position: 6em;
+    }
+}

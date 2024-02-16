@@ -2,3 +2,44 @@
     background-color: var(--branco);
     padding: 1.5em 0 2em 1em ;
 }
+
+.footer__lista{
+    display: none;
+}
+
+@media screen and (min-width: 1024px){
+    .footer{
+        display: flex;
+        justify-content: space-between; 
+        padding: 2em 3em ;
+    }
+
+    .footer__titulo{
+        font-size: 24px;
+    }
+
+    .footer__lista{
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .lista__link{
+        display: flex;
+        align-items: center;
+        gap: .5em;
+        text-decoration: none;
+        color: var(--cinza);
+    }
+
+    .lista__titulo{
+        text-transform: uppercase;
+        color: var(--cinza-claro);
+        font-size: 14px;
+    }
+
+    .lista__nome{
+        font-weight: 400;
+        font-size: 14px;
+    }
+}

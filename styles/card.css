@@ -48,3 +48,16 @@
 .descricao__avaliacao{
     padding-bottom: .3em;
 }
+
+@media screen and (min-width: 1024px){
+    .card{
+        width: 50%;
+        margin:  0 auto 3em auto;
+        padding: 1.5em;
+    }
+
+    .descricao__titulo-livro,
+    .descricao__titulo-nome{
+        margin: .8em 0;
+    }
+}

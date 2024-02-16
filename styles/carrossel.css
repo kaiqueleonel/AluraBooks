@@ -24,3 +24,28 @@
     width: 100%;
 }
 
+@media screen and (min-width:1024px) {
+    .carrossel__titulo{
+        font-size: 26px;
+        padding: 2em 0 1em 0;
+    }
+    
+    .swiper{
+        width: 70%;
+    }
+
+    .swiper-button-prev, 
+    .swiper-button-next{
+        display: block;
+    }
+
+    .swiper-wrapper{
+        margin: 3em 0 3em 0 ;
+    }
+
+    .swiper-pagination{
+        margin-top: 2em;
+    }
+
+
+}
