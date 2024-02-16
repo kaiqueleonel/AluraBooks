@@ -24,7 +24,7 @@
         gap: 1em;
     }
 
-    .lista__link{
+    .lista__link-footer{
         display: flex;
         align-items: center;
         gap: .5em;
@@ -41,5 +41,16 @@
     .lista__nome{
         font-weight: 400;
         font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 1728px){
+    .footer{
+        padding: 5em 10em;
+    }
+    
+    .footer__lista{
+        border-left: 1px solid var(--cinza-claro);
+        padding: 0 1em;
     }
 }
