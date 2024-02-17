@@ -32,7 +32,7 @@
     font-weight: 400;
     font-size: 14px;
     color: var(--branco);
-    background-image: url(/img/Lupa.svg);
+    background-image: url(../img/Lupa.svg);
     background-repeat: no-repeat;
     background-position: 0.5em;
     text-align: center;
