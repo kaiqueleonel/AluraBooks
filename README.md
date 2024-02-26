@@ -3,11 +3,14 @@
 
 Desenvolvimento da página principal da AluraBooks, site de uma empresa fictícia de vendas de livros, baseado no design disponibilizado em um [arquivo Figma](https://www.figma.com/file/sSMbIqKaGBd66Y8roxTk2p/AluraBooks?type=design&node-id=122%3A4916&mode=design&t=YrSPYE7JLI87yyOb-1).
 
-## Tecnologias utilizadas
+| :placard: Vitrine.Dev |     |
+| -------------  | --- |
+| :sparkles: Nome        | Página inicial da AluraBooks
+| :label: Tecnologias | HTML, CSS, Swiper
+| :rocket: URL         | [https://kaiqueleonel.github.io/AluraBooks/](https://kaiqueleonel.github.io/AluraBooks/)
+| :fire: Curso     | [https://www.alura.com.br/curso-online-html-css-responsividade-mobile-first](https://www.alura.com.br/curso-online-html-css-responsividade-mobile-first)
 
-- ``HTML``
-- ``CSS``
-- ``Swiper``
+![AluraBooks](https://github.com/kaiqueleonel/AluraBooks/assets/110237903/4a61eb01-1d75-43c5-b31d-0b86e4eb09fc#vitrinedev)
 
 Obs: Swiper é uma plugin javascript que permite a criação de carrossel e outros tipo de elementos para o seu site.
 
