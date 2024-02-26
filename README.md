@@ -26,6 +26,8 @@ Este projeto foi desenvolvido em um curso da [Alura](https://www.alura.com.br), 
 Mobile-first consiste em desenvolver o site priorisando os dispositovos mobile e depois fazer a responsividade para os demais tipos de telas, por exemplo, desktop, tablet etc. 
 
 ## O que aprendemos
+
+### Metodoloia BEM
 Apartir do arquivo Figma, nós identificamos elementos e seções semelhantes, com isso facilitou a estruturação do HTML e CSS para fazermos reúso de estilos, padrões e classes.
 
 Os elementos HTML tiveram suas classes  nomeadas usando a [metodologia   BEM](https://getbem.com/introduction/)(Block-Element-Modifier), o que é uma boa forma de nomeaçaõ de classes para facilitar a identificação da classe e de onde ela pertence.
@@ -36,19 +38,65 @@ Exemplo:
   <h2 class="carrossel__titulo">últimos lançamentos</h2>
   <div class="corrossel__container">
 ```
-No layout de 428px (para celular) tem um menu hanbúrguer que tinhamos como desafio desenvolver ele ser utilizar javascript. 
 
-*Têcnica de mobile-first
+### Menu Hambúrguer
+Desenvolvemos um menu hambúrguer para dispositivos mobile, utilizando apenas HTML e CSS, para obtermos o resultado abaixo utilizamos pseudo-classes e combinadores. Utilizamos a pseudo-classe ``` :checked ``` e o combinador ``` ~ ```. A pseudo-classe ``` :checked ``` é utilizada quando temos um input do tipo ``` checked ```, somente vai ser aplicado os estilos quando estiver com o ``` checked ```
+ativo. Já o combinador ``` ~ ``` , denominado irmão geral,  ele seleciona todos os elementos que estão dentro do primeiro elemento.
 
-*Utilizar váriaveis no css 
+![AluraBooks-menu__hamburguer](https://github.com/kaiqueleonel/AluraBooks/assets/110237903/702f44c2-b89e-411b-aaa4-114966c7c807)
 
-*Aplicar background com linear-gradient em texto
+Exemplo da pseudo-classe ``` :checked ``` e do combinador ``` ~ ```.
+```CSS
+.container__botao:checked ~ .lista-menu{
+    display: block;
+    position: absolute;
+    top: 100%;
+}
 
-*Utilizar conbinadores, pseudo-classes e pseudo-elementos
+```
 
-*carrosel usando a biblioteca swiper
+Neste exemplo, os estilos somente serão aplicados quando o input  do tipo ``` checked ``` estiver ativo,  o input estando ativo os estilos serão aplicados somente na classe ``` .lista-menu ```.
 
-:construction: Em construção :construction:
+### Váriaveis CSS
+
+Nós definimos variáveis no arquivo CSS para as cores e fontes utilizadas no site, prevenindo a repetição de código e favorecendo seu reúso e manutenção. Quando é necessária uma mudança em uma cor ou fonte, precisamos somente modificar estas variáveis, ao invés de procurar no código todo onde elas foram aplicadas. Segue um exemplo:
+```CSS
+
+:root{
+    --cor-de-fundo: #EBECEE;
+    --branco: #FFFFFF;
+    --laranja: #EB9800;
+    --azul-degrade: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+    --fonte-principal: "Poppins";
+    --azul:#002F52;
+    --preto: #000;
+    --fonte-secundaria: "Josefin Sans";
+    --cinza-claro: #858585;
+    --cinza: #474646;
+}
+
+body{
+    background-color: var(--cor-de-fundo);
+    font-size: 16px;
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+}
+```
+
+###  Background com linear-gradient em texto
+
+Nós observamos no figma que alguns dos texto tinha como cor um linear-gradient, para aplicamos está cor utilizamos o background para aplicar a cor e depois especificamos que o backgound devia ser aplicado somente onde tinha texto e definimos a cor do texto para transparente para não interferir com o background. Segue um exemplo: 
+
+```CSS
+.lista-menu__link{
+    background: var(--azul-degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+}
+```
+Obs: O ``` -webkit-background-clip: text; ``` e o ```  background-clip: text; ``` aplicam o mesmo efeito. O  prefixo ``` -webkit- ``` é usada em navegadores WebKit (como Chrome e Safari).
 
 ## Resultado Final 
 
